@@ -39,9 +39,11 @@ C:\Users\username\Desktop\reactApp>npm install babel-preset-es2015
 Step 4 - Run the below commands to install react-slick carousel component.
 
 C:\Users\username\Desktop\reactApp>npm install react-slick
+
 C:\Users\username\Desktop\reactApp>npm install slick-carousel
 
 Step 5 - Install jquery component
+
 C:\Users\username\Desktop\reactApp>npm install jquery
 
 Step 6 - Running the Server
