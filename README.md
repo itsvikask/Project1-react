@@ -7,6 +7,8 @@ Please make sure you have setup NodeJs before proceeding with further steps.
 Step 1 - Install Global Packages
 You will need to install several packages for this setup. We will need some of the babel plugins so let's first install babel by running the following code in command prompt window.
 
+Make sure to run the below 2 commands as administrator.
+
 C:\Users\username>npm install -g babel
 
 C:\Users\username>npm install -g babel-cli
