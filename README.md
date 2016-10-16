@@ -26,7 +26,7 @@ C:\Users\username\Desktop\reactApp>npm install react --save
 
 C:\Users\username\Desktop\reactApp>npm install react-dom --save
 
-We already mentioned that we will need some babel plugins so let's install it too.
+Step 3 - We already mentioned that we will need some babel plugins so let's install it too.
 
 C:\Users\username\Desktop\reactApp>npm install babel-core
 
@@ -36,7 +36,16 @@ C:\Users\username\Desktop\reactApp>npm install babel-preset-react
 
 C:\Users\username\Desktop\reactApp>npm install babel-preset-es2015
 
-Step 3 - Running the Server
+Step 4 - Run the below commands to install react-slick carousel component.
+
+C:\Users\username\Desktop\reactApp>npm install react-slick
+C:\Users\username\Desktop\reactApp>npm install slick-carousel
+
+Step 5 - Install jquery component
+C:\Users\username\Desktop\reactApp>npm install jquery
+
+Step 6 - Running the Server
+
 The setup is finished and we can start the server by running:
 
 C:\Users\username\Desktop\reactApp>npm start
