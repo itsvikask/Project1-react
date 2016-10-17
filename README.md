@@ -52,4 +52,5 @@ The setup is finished and we can start the server by running:
 
 C:\Users\username\Desktop\reactApp>npm start
 
-#Access the application by hitting the url http://localhost:7070
+Access the application by hitting the url
+# http://localhost:7070
