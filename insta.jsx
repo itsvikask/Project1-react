@@ -7,19 +7,16 @@ var PictureList = React.createClass({
 
     getInitialState: function(){
 
-        // The pictures array will be populated via AJAX, and
-        // the favorites one when the user clicks on an image:
+        // Pictures array will be populated via AJAX
 
         return { pictures: [] };
     },
 
     componentDidMount: function(){
 
-        // When the component loads, send a jQuery AJAX request
-
         var self = this;
 
-        // API endpoint for Instagram's popular images for the day
+        // API endpoint for Instagram's images
 
         var url = 'https://api.instagram.com/v1/users/self/media/recent/?'+location.hash.substr(1)+'&callback=?';
         //var url = 'https://api.instagram.com/oauth/authorize/?client_id=3acac8f1ae3849118f4a4534a5e79cf4&redirect_uri=http://localhost:7070&response_type=token';
@@ -41,10 +38,6 @@ var PictureList = React.createClass({
 
             });
 
-            // Update the component's state. This will trigger a render.
-            // Note that this only updates the pictures property, and does
-            // not remove the favorites array.
-
             self.setState({ pictures: pictures });
 
         });
@@ -64,14 +57,18 @@ var PictureList = React.createClass({
             <div>
             <h1> Authentication Required </h1>
             <a href='https://api.instagram.com/oauth/authorize/?client_id=3acac8f1ae3849118f4a4534a5e79cf4&redirect_uri=http://localhost:7070&response_type=token&scope=public_content'>
-            <p>Please click here to login</p>
+            <p>Please click here to log into your Instagram Account</p>
             </a>
             </div>
             );
         }
 
         var settings = {
-        	dots: true
+        	dots: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
 
         return (
